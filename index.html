@@ -19,13 +19,14 @@
             <input type="text" class="form-control" id="city-input" placeholder="Enter city name">
         </div>
         <div class="text-center mt-3">
-            <button class="btn btn-primary">Search</button>
+            <button id="search" class="btn btn-primary">Search</button>
         </div>
         <div class="mt-4">
             <h2>Weather for <span id="city-name">City Name</span></h2>
             <div class="weather-info">
-                <p>Temperature: <span id="temperature">XX °C</span></p>
-                <p>Condition: <span id="weather-condition">Sunny</span></p> 
+                <p>City: <span id="areacode"></span></p>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Condition: <span id="weather-condition"></span></p> 
                 <!-- Additional weather information goes here -->
             </div>
             <p id="error-message" class="text-danger mt-4"></p>
