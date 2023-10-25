@@ -64,6 +64,7 @@ function getWeather(city){
 
 function getInput(){
     search.addEventListener('click', ()=>{
+        
         getWeather(input.value)
     })
 }
