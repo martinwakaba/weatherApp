@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',() =>{
-    getWeather('Cairo');
+    getInput();
 
 })
 const apikey = '1db2821680c55cae961eb3354269fb98';
@@ -13,6 +13,7 @@ const input = document.querySelector('#city-input');
 const temperature = document.querySelector('#temperature');
 const condition = document.querySelector('#weather-condition');
 const search = document.querySelector('#search');
+const error = document.querySelector('#error-message')
 
 function getWeather(city){
     fetch(apiUrl + city + `&appid=${apikey}`)
@@ -28,7 +29,22 @@ function getWeather(city){
         cityName.innerHTML = data.name;
 
         if(data.weather[0].main === 'Rain'){
+            img.src = 'images/rain.jpeg';
 
+        }else if(data.weather[0].main === 'Mist'){
+            img.src = 'images/humidity.png'
+
+        }else if(data.weather[0].main === 'Clear'){
+            img.src = 'images/sunny.jpeg'
+
+        }else if(data.weather[0].main === 'Clouds'){
+            img.src = 'images/cloudy.png'
+
+        }else if(data.weather[0].main === 'Drizzle'){
+            img.src = 'images/drizzle.png'
+
+        }else{
+            img.src = 'images/wind.png'
         }
 
         
@@ -37,10 +53,9 @@ function getWeather(city){
     .catch(error => error.log('Error', Error))
 }
 
-function getInput(data){
-    document.addEventListener('submit', {
-
-
+function getInput(){
+    search.addEventListener('click', ()=>{
+        getWeather(input.value)
     })
 }
 
