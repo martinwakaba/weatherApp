@@ -1,5 +1,6 @@
 // waiting for DOM to load first
 document.addEventListener('DOMContentLoaded',() =>{
+    
     getInput();
 
 })
@@ -45,7 +46,7 @@ function getWeather(city){
             
 
         }else if(data.weather[0].main === 'Clear'){
-            img.src = 'images/sunny.jpeg';
+            img.src = 'images/sunny.png';
            
 
         }else if(data.weather[0].main === 'Clouds'){
@@ -64,16 +65,8 @@ function getWeather(city){
 
     })
     .catch(error => {
-        if(input.value == ''){
-        alert('Enter a City')
+        alert('Enter a City');
         error.log(Error)
-
-        areaCode.innerHTML = '';
-        temperature.innerHTML = '';
-        humidity.innerHTML = '';
-        wind.innerHTML = '';
-        condition.innerHTML = '';
-        }
         
 
        
