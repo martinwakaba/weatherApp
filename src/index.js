@@ -50,7 +50,16 @@ function getWeather(city){
         
 
     })
-    .catch(error => error.log('Error', Error))
+    .catch(error => {
+        alert('This is not a city')
+        error.log(Error)
+
+        areaCode.innerHTML = '';
+        temperature.innerHTML = '';
+        humidity.innerHTML = '';
+        wind.innerHTML = '';
+        condition.innerHTML = '';
+    })
 }
 
 function getInput(){
