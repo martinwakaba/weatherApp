@@ -43,24 +43,24 @@ function getWeather(city){
         
 // Adding images of a specific weather climate
         if(data.weather[0].main === 'Rain'){
-            img.src = 'images/rain.jpeg';
+            img.src = 'assets/rain.jpeg';
             
         }else if(data.weather[0].main === 'Mist'){
-            img.src = 'images/humidity.png'
+            img.src = 'assets/humidity.png'
             
 
         }else if(data.weather[0].main === 'Clear'){
-            img.src = 'images/sunny.png';
+            img.src = 'assets/sunny.png';
            
 
         }else if(data.weather[0].main === 'Clouds'){
-            img.src = 'images/cloudy.png'
+            img.src = 'assets/cloudy.png'
             
         }else if(data.weather[0].main === 'Drizzle'){
-            img.src = 'images/drizzle.png'
+            img.src = 'assets/drizzle.png'
            
         }else{
-            img.src = 'images/wind.png'
+            img.src = 'assets/wind.png'
             
         }
         
