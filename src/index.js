@@ -62,9 +62,7 @@ function getWeather(city){
         }else{
             img.src = 'assets/wind.png'
             
-        }
-        
-        
+        }      
         
 
     })

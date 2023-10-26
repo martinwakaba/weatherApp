@@ -16,7 +16,7 @@ h1:hover{
 #city-input{
     font-size: 35px;
 }
-#city-name:hover{
+#city-name{
     color: #e02525;
 }
 .weather-info{
