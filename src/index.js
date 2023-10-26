@@ -21,7 +21,9 @@ const condition = document.querySelector('#weather-condition');
 const search = document.querySelector('#search');
 const error = document.querySelector('#error-message')
 
-// Function to retrieve data from the API
+
+
+// Function to retrieve data from the External API
 
 function getWeather(city){
     fetch(apiUrl + city + `&appid=${apikey}`)
@@ -37,6 +39,8 @@ function getWeather(city){
         wind.innerHTML = data.wind.speed + 'Km/h';
         condition.innerHTML = data.weather[0].main;
         cityName.innerHTML = data.name;
+
+        
 
         if(data.weather[0].main === 'Rain'){
             img.src = 'images/rain.jpeg';
@@ -72,6 +76,7 @@ function getWeather(city){
        
     })
 }
+// Getting Input data
 
 function getInput(){
     search.addEventListener('click', ()=>{

@@ -1,0 +1,40 @@
+{
+    "pictures":[
+        {
+            "id": "1",
+            "photo": "images/cloudy.png"
+        },
+        {
+            "id": "2",
+            "photo": "images/drizzle.png"
+        },
+        {
+            "id": "3",
+            "photo": "images/humidity.png"
+        },
+        {
+            "id": "4",
+            "photo": "images/rain.jpeg"
+        },
+        {
+            "id": "5",
+            "photo": "images/sunny.jpeg"
+        },
+        {
+            "id": "6",
+            "photo1": "images/sunny.png"
+        },
+        {
+            "id": "7",
+            "photo": "images/weather-forecast.png"
+        },
+        {
+            "id": "8",
+            "photo": "images/weather-news.png"
+        },
+        {
+            "id": "9",
+            "photo": "images/wind.png"
+        }
+    ]
+}

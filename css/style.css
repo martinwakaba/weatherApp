@@ -6,8 +6,16 @@
 }
 
 h1{
-    color: #fff;
+    color: #ffffff;
+    
+}
+h1:hover{
+    transform: scaleY(1.5);
+    color: #000000;
 }
 #city-input{
     font-size: 35px;
+}
+#city-name:hover{
+    color: #eb4d4d;
 }
