@@ -41,7 +41,7 @@ function getWeather(city){
         cityName.innerHTML = data.name;
 
         
-
+// Adding images of a specific weather climate
         if(data.weather[0].main === 'Rain'){
             img.src = 'images/rain.jpeg';
             
