@@ -19,3 +19,6 @@ h1:hover{
 #city-name:hover{
     color: #eb4d4d;
 }
+.weather-info{
+    font-size: 20px;
+}

@@ -36,7 +36,7 @@ function getWeather(city){
         areaCode.innerHTML = data.name;
         temperature.innerHTML = Math.round(data.main.temp) + "°c";
         humidity.innerHTML = data.main.humidity + '%';
-        wind.innerHTML = data.wind.speed + 'Km/h';
+        wind.innerHTML = data.wind.speed + '' + 'Km/h';
         condition.innerHTML = data.weather[0].main;
         cityName.innerHTML = data.name;
 
