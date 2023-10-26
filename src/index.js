@@ -1,6 +1,6 @@
 // waiting for DOM to load first
-document.addEventListener('DOMContentLoaded',() =>{
-    
+document.addEventListener('DOMContentLoaded',(e) =>{
+    e.preventDefault()
     getInput();
 
 })
@@ -79,7 +79,8 @@ function getWeather(city){
 // Getting Input data
 
 function getInput(){
-    search.addEventListener('click', ()=>{
+    search.addEventListener('click', (e)=>{
+        e.preventDefault()
         getWeather(input.value)
     })
 }
